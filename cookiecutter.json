@@ -1,0 +1,17 @@
+{
+    "project_name" : "project name",
+    "repo_name" : "{{ cookiecutter.project_name | lower | replace(' ', '-') }}",
+    "description" : "",
+    "company_name" : "omricat",
+    "maven_group" : "com.{{ cookiecutter.company_name | lower }}",
+    "package_name" : "{{ cookiecutter.maven_group }}.{{ cookiecutter.project_name | lower | replace(' ', '.') }}",
+    "package_dir" : "{{ cookiecutter.package_name | replace('.', '/') }}",
+    
+    "_copy_without_render": [
+        "gradlew",
+        "gradlew.bat",
+        "gradle/wrapper/gradle-wrapper.jar",
+        "tools/*",
+        "buildSrc/*"
+    ]
+}
