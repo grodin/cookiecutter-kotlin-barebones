@@ -5,6 +5,7 @@ plugins {
     tasktree version Versions.TASK_TREE
     detekt version Versions.DETEKT
     testlogger version Versions.TEST_LOGGER
+    noCopyPlugin version Versions.NO_COPY_PLUGIN
     idea
 }
 
