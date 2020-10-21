@@ -1,5 +1,3 @@
-syntax: glob
-
 *.sublime-workspace
 .idea/
 .gradle/
